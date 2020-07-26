@@ -1,0 +1,19 @@
+.navbar {
+  background-color: #48d8a4;
+  height: 70px;
+}
+
+.navbar-nav li:hover {
+  /* content: "";
+  width: 72%;
+  height: 4px;
+  background-color: #f48480;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 14%;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; */
+}

@@ -1,0 +1,11 @@
+/*================= Skills Component ==================*/
+.skills-container {
+  font-size: 60pt;
+}
+
+.skills-left-container,
+.skills-right-container {
+  justify-content: center;
+  align-items: center;
+}
+/*================= Skills Component ==================*/
