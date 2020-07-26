@@ -6,7 +6,7 @@ const About = () => {
     <div>
       <h1>About Me</h1>
       <p>
-        Who Is Annie? head-shot of Annie Liew. A curiosity-driven Front-End
+      A curiosity-driven Front-End
         Developer with design chops. I'm passionate about bringing both the
         technical and visual aspects of digital products to life. I care deeply
         about the user experience, beautiful pixels and writing clean accessible
