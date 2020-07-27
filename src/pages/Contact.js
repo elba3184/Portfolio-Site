@@ -7,7 +7,6 @@ const Contact = () => {
       <i class="devicon-github-plain-wordmark"></i>
       <i class="devicon-linkedin-plain"></i>
       Please feel free to contact me
-      <Footer />
     </div>
   )
 }

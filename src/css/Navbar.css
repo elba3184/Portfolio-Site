@@ -1,19 +1,37 @@
 .navbar {
-  background-color: #48d8a4;
+  background-color: #4ecdc4ff;
   height: 70px;
 }
 
-.navbar-nav li:hover {
-  /* content: "";
-  width: 72%;
-  height: 4px;
-  background-color: #f48480;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
+.navbar-nav .nav-link {
+  color: #f7fff7ff;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #ffe66dff;
   position: absolute;
-  bottom: 0;
-  left: 14%;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; */
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.nav-link:hover::after {
+  color: #ffe66dff;
+  width: 3.8%;
+}
+
+.nav-link.longer:hover::after {
+  color: #ffe66dff;
+  width: 5.5%;
+}
+
+.nav-link:hover {
+  color: #ffe66dff;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
 }

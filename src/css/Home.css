@@ -1,0 +1,36 @@
+/* SCSS HEX */
+/* $midnight-green-eagle-green: #1a535cff;
+$medium-turquoise: #4ecdc4ff;
+$mint-cream: #f7fff7ff;
+$bittersweet: #ff6b6bff;
+$naples-yellow: #ffe66dff; */
+
+/* SCSS RGB */
+/* $midnight-green-eagle-green: rgba(26, 83, 92, 1);
+$medium-turquoise: rgba(78, 205, 196, 1);
+$mint-cream: rgba(247, 255, 247, 1);
+$bittersweet: rgba(255, 107, 107, 1);
+$naples-yellow: rgba(255, 230, 109, 1); */
+
+/* SCSS Gradient */
+
+.skewed-bg {
+  height: 100vh;
+  padding-top: 200px;
+  background: #ff6b6bff;
+  color: #fff;
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.skewed-bg::after {
+  content: "";
+  position: absolute;
+  bottom: -80%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: #fff;
+  transform: skew(0deg, -6deg);
+}

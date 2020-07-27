@@ -1,9 +1,13 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "elba-portfoilio-site",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "My official portfolio",
   "version": "0.1.0",
   "license": "0BSD",
+  "author": {
+    "name": "Elba Chimilio",
+    "email": "emchimilio@gmail.com"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -15,8 +19,17 @@
   },
   "dependencies": {
     "gatsby": "^2.23.12",
+    "node-sass": "^4.14.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.13.1",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^3.1.0",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.0.11",
+    "react-helmet": "^5.2.1",
+    "react-images": "^1.1.0",
+    "react-scrollspy": "^3.4.0",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "prettier": "2.0.5"

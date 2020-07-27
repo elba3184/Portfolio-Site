@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import "../css/Home.scss"
+import "../css/Home.css"
 
 const Title = () => {
 

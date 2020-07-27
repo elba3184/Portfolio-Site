@@ -1,3 +1,13 @@
+.about-me-container {
+  background: #f7fff7ff;
+  height: 100vh;
+}
+.professional-img {
+  border-radius: 50%;
+  width: 325px;
+  height: 350px;
+}
+
 /*================= Skills Component ==================*/
 .skills-container {
   font-size: 60pt;

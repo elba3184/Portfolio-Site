@@ -1,7 +1,13 @@
 import React from "react"
 
 const Footer = () => {
-  return <div>I'm the footer</div>
+  return (
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        I'm a footer
+      </a>
+    </nav>
+  )
 }
 
 export default Footer
