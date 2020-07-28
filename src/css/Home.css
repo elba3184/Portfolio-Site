@@ -14,23 +14,68 @@ $naples-yellow: rgba(255, 230, 109, 1); */
 
 /* SCSS Gradient */
 
-.skewed-bg {
+body {
+  width: 100vw;
   height: 100vh;
+}
+
+.skewed-bg {
+  height: 80vh;
   padding-top: 200px;
   background: #ff6b6bff;
-  color: #fff;
+  color: #f7fff7ff;
   position: relative;
-  min-height: 300px;
   overflow: hidden;
+  box-sizing: content-box;
 }
 
 .skewed-bg::after {
-  content: "";
-  position: absolute;
-  bottom: -80%;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background: #fff;
-  transform: skew(0deg, -6deg);
+  background-color: #ff6b6bff;
+  clip-path: polygon(48% 42%, 0 0, 100% 0);
+  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
 }
+
+.title {
+  font-size: 120pt;
+}
+
+.subtitle {
+  font-size: 30pt;
+}
+
+.about-section {
+  text-align: left;
+}
+
+/*=================== Media Queries ===================*/
+
+@media (max-width: 575.98px) {
+  .title {
+    font-size: 70pt;
+  }
+
+  .subtitle {
+    font-size: 20pt;
+  }
+
+  .about-section {
+    text-align: center;
+  }
+}
+
+/*=================== Media Queries ===================*/
+
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */

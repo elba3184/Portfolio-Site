@@ -5,23 +5,24 @@ import Footer from "../components/Footer"
 import About from "../pages/About"
 import Projects from "../pages/Projects"
 import Contact from "../pages/Contact"
+import "../css/Home.css"
 
 const IndexPage = () => (
   <Fragment>
     <Navbar />
-    <section id="home" className="projects-section bg-light">
+    <section id="home" className="home-section text-center">
       <Home />
     </section>
-    <section id="about" className="about-section text-center">
+    <section id="about" className="about-section">
       <About />
     </section>
     <section id="projects" className="about-section text-center">
       <Projects />
     </section>
-    <section id="contact" className="about-section text-center">
+    <section id="contact" className="contact-section text-center">
       <Contact />
     </section>
-    <Footer />
+    {/* <Footer /> */}
   </Fragment>
 )
 

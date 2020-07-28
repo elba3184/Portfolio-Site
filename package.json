@@ -19,16 +19,20 @@
   },
   "dependencies": {
     "gatsby": "^2.23.12",
-    "node-sass": "^4.14.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.13.1",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^3.1.0",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",
+    "node-sass": "^4.14.1",
+    "react": "^16.12.0",
+    "react-confetti": "^6.0.0",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-images": "^1.1.0",
     "react-scrollspy": "^3.4.0",
+    "react-spring": "^8.0.27",
+    "react-typing-animation": "^1.6.2",
+    "react-use": "^15.3.3",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {

@@ -18,4 +18,20 @@
   justify-content: center;
   align-items: center;
 }
+
 /*================= Skills Component ==================*/
+
+/*=================== Media Queries ===================*/
+
+@media (max-width: 575.98px) {
+  .professional-img {
+    width: 40%;
+    height: 25%;
+  }
+
+  .skills-container {
+    font-size: 30pt;
+  }
+}
+
+/*=================== Media Queries ===================*/

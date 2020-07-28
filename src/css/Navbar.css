@@ -1,10 +1,12 @@
 .navbar {
   background-color: #4ecdc4ff;
-  height: 70px;
+  height: 80px;
+  width: 100vw;
 }
 
 .navbar-nav .nav-link {
   color: #f7fff7ff;
+  font-weight: 500;
 }
 
 .nav-link::after {
@@ -32,6 +34,6 @@
 }
 
 .logo {
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
 }

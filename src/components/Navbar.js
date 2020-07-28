@@ -1,55 +1,3 @@
-// import React from "react"
-// import { Link } from "gatsby"
-// import "../css/Navbar.css"
-// // import logo from "../../public/logo.png"
-
-// const Navbar = () => {
-//   return (
-//     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-//       <Link class="navbar-brand" to="/">
-//         Logo
-//       </Link>
-//       <button
-//         class="navbar-toggler"
-//         type="button"
-//         data-toggle="collapse"
-//         data-target="#navbarNavAltMarkup"
-//         aria-controls="navbarNavAltMarkup"
-//         aria-expanded="false"
-//         aria-label="Toggle navigation"
-//       >
-//         <span class="navbar-toggler-icon"></span>
-//       </button>
-//       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-//         <ul class="navbar-nav">
-//           <li class="nav-item">
-//             <Link class="nav-link" to="#">
-//               HOME
-//             </Link>
-//           </li>
-//           <li class="nav-item">
-//             <Link class="nav-link" to="/About">
-//               ABOUT
-//             </Link>
-//           </li>
-//           <li class="nav-item">
-//             <Link class="nav-link longer" to="#Projects">
-//               PROJECTS
-//             </Link>
-//           </li>
-//           <li class="nav-item">
-//             <Link class="nav-link longer" href="#Contact">
-//               CONTACT
-//             </Link>
-//           </li>
-//         </ul>
-//       </div>
-//     </nav>
-//   )
-// }
-
-// export default Navbar
-
 import React, { Component } from "react"
 import Scroll from "./Scroll"
 import logo from "../../static/logo.png"
@@ -100,7 +48,7 @@ export default class Header extends Component {
             </a>
           </Scroll>
           <button
-            onClick={_ => this.toggleMenu(!openMenu)}
+            onClick={() => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
               openMenu ? "" : "collapsed"
             }`}
