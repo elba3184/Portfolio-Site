@@ -13,7 +13,7 @@ const ConfettiAnimation = () => {
       numberOfPieces={1500}
       opacity={0.8}
       friction={0.99}
-      gravity={0.09}
+      gravity={0.14}
     />
   )
 }

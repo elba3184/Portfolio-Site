@@ -1,43 +1,26 @@
-import React from "react"
-import { Transition } from "react-spring/renderprops"
+import React, { Fragment } from "react"
 import ConfettiAnimation from "../components/ConfettiAnimation"
 import Title from "../components/Title"
+import AboutButton from "../components/AboutButton"
+
 import "../css/Home.css"
 
 const Home = () => {
-  const items = [
-    "Full-Stack Web Developer 👩🏽‍💻",
-    "Artist 🎨",
-    "Booklover 📚",
-    "Adventurer 🌎",
-    "TikTok Addict 💃",
-    "Movie Enthusiast 🎬",
-    "Animal Crossing Expert 🐶",
-  ]
-
   return (
-    <div className="skewed-bg">
-      <ConfettiAnimation />
-      <div>
-        <div
-          style={{
-            justifyContent: "center",
-          }}
-        >
-          <Title />
+    <Fragment>
+      <div className="skewed-bg">
+        <ConfettiAnimation />
+        <div className="title-container">
+          <div className="title-center">
+            <Title />
+          </div>
+          <div>
+            <AboutButton />
+          </div>
         </div>
-
-        <Transition
-          items={items}
-          keys={item => item.key}
-          from={{ transform: "translate3d(0,-40px,0)" }}
-          enter={{ transform: "translate3d(0,0px,0)" }}
-          leave={{ transform: "translate3d(0,-40px,0)" }}
-        >
-          {item => props => <div style={props}>{item.text}</div>}
-        </Transition>
       </div>
-    </div>
+      <div className="skewed-bg-bottom">something</div>
+    </Fragment>
   )
 }
 

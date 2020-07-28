@@ -1,11 +1,10 @@
 import React from "react"
-import Footer from "../components/Footer"
 
 const Contact = () => {
   return (
     <div>
-      <i class="devicon-github-plain-wordmark"></i>
-      <i class="devicon-linkedin-plain"></i>
+      <i className="devicon-github-plain-wordmark"></i>
+      <i className="devicon-linkedin-plain"></i>
       Please feel free to contact me
     </div>
   )

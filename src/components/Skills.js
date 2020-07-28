@@ -5,8 +5,8 @@ const Skills = () => {
   return (
     <div className="skills-container">
       <div className="skills-left-container">
-        <i class="devicon-javascript-plain"></i>
-        <i class="devicon-react-original-wordmark"></i>
+        <i className="devicon-javascript-plain"></i>
+        <i className="devicon-react-original-wordmark"></i>
         <div style={{ height: "60px", width: "60px" }}>
           <svg viewBox="0 0 128 128">
             <path fill="none" d="M0 0h128v128H0z"></path>
@@ -16,22 +16,22 @@ const Skills = () => {
             ></path>
           </svg>
         </div>
-        <i class="devicon-nodejs-plain"></i>
-        <i class="devicon-express-original-wordmark"></i>
-        <i class="devicon-html5-plain-wordmark"></i>
-        <i class="devicon-css3-plain-wordmark"></i>
-        <i class="devicon-sass-original"></i>
+        <i className="devicon-nodejs-plain"></i>
+        <i className="devicon-express-original-wordmark"></i>
+        <i className="devicon-html5-plain-wordmark"></i>
+        <i className="devicon-css3-plain-wordmark"></i>
+        <i className="devicon-sass-original"></i>
       </div>
 
       <div className="skills-right-container">
-        <i class="devicon-git-plain-wordmark"></i>
-        <i class="devicon-jquery-plain-wordmark"></i>
-        <i class="devicon-amazonwebservices-plain-wordmark"></i>
-        <i class="devicon-mongodb-plain-wordmark"></i>
-        <i class="devicon-github-plain-wordmark"></i>
-        <i class="devicon-heroku-line-wordmark"></i>
-        <i class="devicon-bootstrap-plain-wordmark"></i>
-        <i class="devicon-visualstudio-plain"></i>
+        <i className="devicon-git-plain-wordmark"></i>
+        <i className="devicon-jquery-plain-wordmark"></i>
+        <i className="devicon-amazonwebservices-plain-wordmark"></i>
+        <i className="devicon-mongodb-plain-wordmark"></i>
+        <i className="devicon-github-plain-wordmark"></i>
+        <i className="devicon-heroku-line-wordmark"></i>
+        <i className="devicon-bootstrap-plain-wordmark"></i>
+        <i className="devicon-visualstudio-plain"></i>
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
-/* SCSS HEX */
-/* $midnight-green-eagle-green: #1a535cff;
+/* SCSS HEX
+$midnight-green-eagle-green: #1a535cff;
 $medium-turquoise: #4ecdc4ff;
 $mint-cream: #f7fff7ff;
 $bittersweet: #ff6b6bff;
@@ -12,16 +12,12 @@ $mint-cream: rgba(247, 255, 247, 1);
 $bittersweet: rgba(255, 107, 107, 1);
 $naples-yellow: rgba(255, 230, 109, 1); */
 
-/* SCSS Gradient */
-
-body {
-  width: 100vw;
-  height: 100vh;
+.home-section.text-center {
+  background-color: #f7fff7ff;
 }
-
 .skewed-bg {
-  height: 80vh;
-  padding-top: 200px;
+  height: 70vh;
+  padding-top: 150px;
   background: #ff6b6bff;
   color: #f7fff7ff;
   position: relative;
@@ -29,18 +25,54 @@ body {
   box-sizing: content-box;
 }
 
-.skewed-bg::after {
-  background-color: #ff6b6bff;
-  clip-path: polygon(48% 42%, 0 0, 100% 0);
-  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
+.skewed-bg-bottom {
+  height: 8vh;
+  padding-top: 150px;
+  background: #ff6b6bff;
+  color: #f7fff7ff;
+  position: relative;
+  overflow: hidden;
+  box-sizing: content-box;
+  clip-path: polygon(50% 30%, 0 0, 100% 0);
+}
+
+.title-center {
+  height: 450px;
+  justify-content: center;
 }
 
 .title {
-  font-size: 120pt;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 110pt;
+}
+
+.subtitle-container {
+  padding-top: 25px;
+  min-height: auto;
 }
 
 .subtitle {
+  font-size: 40pt;
+}
+
+.subtitle-options span {
   font-size: 30pt;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.dark-green-text {
+  color: #1a535cff;
+}
+
+.turquoise-text {
+  color: #4ecdc4ff;
+}
+
+.light-text {
+  color: #f7fff7ff;
 }
 
 .about-section {
@@ -51,11 +83,15 @@ body {
 
 @media (max-width: 575.98px) {
   .title {
-    font-size: 70pt;
+    font-size: 55pt;
   }
 
   .subtitle {
     font-size: 20pt;
+  }
+
+  .subtitle-options span {
+    font-size: 14pt;
   }
 
   .about-section {
