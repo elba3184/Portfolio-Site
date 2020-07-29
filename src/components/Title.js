@@ -2,7 +2,6 @@ import React, { Fragment, Component } from "react"
 import { Transition } from "react-spring/renderprops"
 import Typing from "react-typing-animation"
 import TextLoop from "react-text-loop"
-import Scroll from "../components/Scroll"
 import "../css/AboutButton.scss"
 
 class TitleTransition extends Component {
@@ -41,7 +40,7 @@ class SubtitleTransition extends Component {
           (props => (
             <div style={props} className="subtitle-options">
               <TextLoop
-                interval={5000}
+                interval={4000}
                 delay={1800}
                 noWrap={true}
                 mask={true}
@@ -55,8 +54,8 @@ class SubtitleTransition extends Component {
                   <span role="img">🎨</span>
                 </span>
                 <span>
-                  <span className="dark-green-text">BOOKLOVER </span>
-                  <span role="img">📚</span>
+                  <span className="dark-green-text">IRONHACK ALUMN </span>
+                  <span role="img">👩🏽‍🎓</span>
                 </span>
                 <span>
                   <span className="light-text">ADVENTURER </span>

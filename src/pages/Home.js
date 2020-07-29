@@ -19,7 +19,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="skewed-bg-bottom">something</div>
+      <div className="skewed-bg-bottom"></div>
     </Fragment>
   )
 }

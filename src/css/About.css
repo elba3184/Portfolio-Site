@@ -1,11 +1,25 @@
 .about-me-container {
-  background: #f7fff7ff;
   height: 100vh;
+  padding-top: 130px;
+  background: #f7fff7ff;
 }
+
+.about-me-content {
+  display: flex;
+  padding-left: 80px;
+  align-items: center;
+}
+
 .professional-img {
   border-radius: 50%;
-  width: 325px;
-  height: 350px;
+  width: 300px;
+  height: 330px;
+}
+
+.about-me-bottom {
+  height: 200px;
+  background: #f7fff7ff;
+  clip-path: polygon(0 0, 100% 0%, 100% 54%, 0 78%);
 }
 
 /*================= Skills Component ==================*/
