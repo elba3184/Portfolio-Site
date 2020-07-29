@@ -10,7 +10,7 @@ import "../css/HoneyComb.scss"
 const Images = () => {
   return (
     <div>
-      <ul className="honeycomb" lang="es">
+      <ul className="honeycomb">
         <li className="honeycomb-cell">
           <img className="honeycomb-cell__image right" src={img2} />
           <div className="honeycomb-cell__title">
@@ -29,6 +29,8 @@ const Images = () => {
             Ironhack <small>Day 1</small>
           </div>
         </li>
+      </ul>
+      <ul className="honeycomb">
         <li className="honeycomb-cell">
           <img className="honeycomb-cell__image left" src={img6} />
           <div className="honeycomb-cell__title">
