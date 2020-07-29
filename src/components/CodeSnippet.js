@@ -50,8 +50,9 @@ const CodeSnippet = () => {
             became
           </span>
           <span>
-            addicted to Starbucks coffee for survival 😬. In between the
-            madness, I
+            addicted to Starbucks coffee{" "}
+            <i style={{ textDecoration: "line-through" }}>for survival</i> 😬.
+            In between the madness, I
           </span>
           <span>
             discovered a passion for <i>robotics</i> and <i>engineering</i> in

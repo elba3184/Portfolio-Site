@@ -5,6 +5,7 @@ $mint-cream: #f7fff7ff;
 $bittersweet: #ff6b6bff;
 $naples-yellow: #ffe66dff; 
 $gray: #55555555;
+$baby-blue: #3ea0eb;
 */
 
 /* SCSS RGB */
@@ -18,7 +19,6 @@ $naples-yellow: rgba(255, 230, 109, 1); */
   background-color: #f7fff7ff;
 }
 .skewed-bg {
-  height: 70vh;
   padding-top: 150px;
   background: #ff6b6bff;
   color: #f7fff7ff;
@@ -28,7 +28,7 @@ $naples-yellow: rgba(255, 230, 109, 1); */
 }
 
 .skewed-bg-bottom {
-  height: 8vh;
+  height: 23vh;
   padding-top: 150px;
   background: #ff6b6bff;
   color: #f7fff7ff;

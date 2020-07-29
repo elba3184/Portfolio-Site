@@ -3,6 +3,7 @@ import Home from "../pages/Home"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import About from "../pages/About"
+import Skills from "../components/Skills"
 import Projects from "../pages/Projects"
 import Contact from "../pages/Contact"
 import "../css/Home.css"
@@ -16,6 +17,9 @@ const IndexPage = () => (
     <section id="about" className="about-section">
       <About />
     </section>
+    {/* <section id="skills" className="skills-section">
+      <Skills />
+    </section> */}
     {/* <section id="projects" className="about-section text-center">
       <Projects />
     </section>

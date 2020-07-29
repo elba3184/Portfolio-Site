@@ -1,39 +1,44 @@
 .about-me-container {
-  height: 100vh;
-  padding-top: 130px;
+  height: 170vh;
+  padding-top: 110px;
   background: #f7fff7ff;
+}
+
+.about-me-title {
+  color: #3ea0eb;
+  font-size: 30pt;
+  padding-left: 60px;
 }
 
 .about-me-content {
   display: flex;
-  padding-left: 80px;
+  padding-left: 60px;
   align-items: center;
 }
 
 .professional-img {
   border-radius: 50%;
-  width: 300px;
-  height: 330px;
+  width: 370px;
+  height: 400px;
 }
 
 .about-me-bottom {
-  height: 200px;
+  height: 2ß00px;
   background: #f7fff7ff;
   clip-path: polygon(0 0, 100% 0%, 100% 54%, 0 78%);
 }
 
-/*================= Skills Component ==================*/
-.skills-container {
-  font-size: 60pt;
+.img-2,
+.img-4,
+.img-5 {
+  width: 600px;
+  height: 450px;
 }
 
-.skills-left-container,
-.skills-right-container {
-  justify-content: center;
-  align-items: center;
+.img-3 {
+  width: 350px;
+  height: 500px;
 }
-
-/*================= Skills Component ==================*/
 
 /*=================== Media Queries ===================*/
 
