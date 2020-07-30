@@ -2,26 +2,26 @@ import React, { Fragment, Component } from "react"
 import Typing, { Delay, Speed } from "react-typing-animation"
 import "../scss/CodeSnippet.scss"
 
-class TitleTransition extends Component {
-  render() {
-    return (
-      <Fragment>
-        <Typing speed={100}>
-          {/* <span>console.log("Hello, World!");</span>
-          <Typing.Backspace count={40} />
-          <span>This line will stay.</span>
-          <span>This line will get instantly removed after a 500 ms delay</span>
-          <Typing.Reset count={1} delay={500} /> */}
-          <Delay ms={1000} />
-          <li>
-            <span> &#10004;</span> Change the <Speed ms={250} /> speed{" "}
-            <Speed ms={20} /> of typing anywhere <Speed ms={40} /> in the tree.
-          </li>
-        </Typing>
-      </Fragment>
-    )
-  }
-}
+// class TitleTransition extends Component {
+//   render() {
+//     return (
+//       <Fragment>
+//         <Typing speed={100}>
+//           {/* <span>console.log("Hello, World!");</span>
+//           <Typing.Backspace count={40} />
+//           <span>This line will stay.</span>
+//           <span>This line will get instantly removed after a 500 ms delay</span>
+//           <Typing.Reset count={1} delay={500} /> */}
+//           <Delay ms={1000} />
+//           <li>
+//             <span> &#10004;</span> Change the <Speed ms={250} /> speed{" "}
+//             <Speed ms={20} /> of typing anywhere <Speed ms={40} /> in the tree.
+//           </li>
+//         </Typing>
+//       </Fragment>
+//     )
+//   }
+// }
 
 const CodeSnippet = () => {
   return (

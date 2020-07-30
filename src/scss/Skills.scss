@@ -19,20 +19,28 @@
   align-content: stretch;
   align-items: flex-start;
   .flex-item {
+    color: #262626;
+    font-size: 100pt;
     padding-top: 80px;
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    & i {
-      color: #262626;
-      font-size: 100pt;
+    .redux-icon {
+      height: 133.34px;
+      width: 133px;
+      & svg {
+        margin-bottom: 50px;
+      }
+      & svg path:hover {
+        fill: $naples-yellow;
+      }
     }
-  }
-  .flex-item i:hover {
-    color: $naples-yellow;
+    & :hover {
+      color: $naples-yellow;
+    }
   }
 }
 
-.skills-container-bottom {
+.flex-item .skills-container-bottom {
   clip-path: polygon(79% 15%, 0 0, 100% 0);
 }

@@ -32,7 +32,7 @@ const IndexPage = () => (
         crossorigin="anonymous"
       />
       <body>
-        {`<div id="___gatsby"></div>
+        {/* {`<div id="___gatsby"></div>
           <script src="/commons.js"></script>
           <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -48,7 +48,9 @@ const IndexPage = () => (
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous"
-          ></script>`}
+          ></script>
+          <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+          `} */}
       </body>
     </Helmet>
     <Navbar />
@@ -61,9 +63,9 @@ const IndexPage = () => (
     <section id="skills" className="skills-section">
       <Skills />
     </section>
-    <section id="projects" className="about-section text-center">
+    {/* <section id="projects" className="about-section text-center">
       <Projects />
-    </section>
+    </section> */}
     {/* <section id="contact" className="contact-section text-center">
       <Contact />
     </section>
