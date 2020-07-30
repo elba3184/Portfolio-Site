@@ -1,11 +1,13 @@
+@import "../scss/variables.scss";
+
 .about-me-container {
-  height: 170vh;
+  height: 90vh;
   padding-top: 110px;
-  background: #f7fff7ff;
+  background-color: $mint-cream;
 }
 
 .about-me-title {
-  color: #3ea0eb;
+  color: $gray;
   font-size: 30pt;
   padding-left: 60px;
 }
@@ -23,9 +25,12 @@
 }
 
 .about-me-bottom {
-  height: 2ß00px;
-  background: #f7fff7ff;
-  clip-path: polygon(0 0, 100% 0%, 100% 54%, 0 78%);
+  height: 200px;
+  background-color: $mint-cream;
+  position: relative;
+  overflow: hidden;
+  box-sizing: content-box;
+  clip-path: polygon(0 50%, 0 0, 100% 0);
 }
 
 .img-2,

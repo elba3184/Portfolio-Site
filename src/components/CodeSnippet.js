@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from "react"
 import Typing, { Delay, Speed } from "react-typing-animation"
-import "../css/CodeSnippet.scss"
+import "../scss/CodeSnippet.scss"
 
 class TitleTransition extends Component {
   render() {

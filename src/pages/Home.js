@@ -3,7 +3,7 @@ import ConfettiAnimation from "../components/ConfettiAnimation"
 import Title from "../components/Title"
 import AboutButton from "../components/AboutButton"
 
-import "../css/Home.css"
+import "../scss/Home.scss"
 
 const Home = () => {
   return (

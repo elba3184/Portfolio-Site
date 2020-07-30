@@ -1,3 +1,5 @@
+@import "../scss/variables.scss";
+
 .navbar {
   background-color: #4ecdc4ff;
   height: 80px;
@@ -5,7 +7,7 @@
 }
 
 .navbar-nav .nav-link {
-  color: #f7fff7ff;
+  color: $mint-cream;
   font-weight: 500;
 }
 

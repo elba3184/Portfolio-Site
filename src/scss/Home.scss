@@ -1,27 +1,13 @@
-/* SCSS HEX
-$midnight-green-eagle-green: #1a535cff;
-$medium-turquoise: #4ecdc4ff;
-$mint-cream: #f7fff7ff;
-$bittersweet: #ff6b6bff;
-$naples-yellow: #ffe66dff; 
-$gray: #55555555;
-$baby-blue: #3ea0eb;
-*/
-
-/* SCSS RGB */
-/* $midnight-green-eagle-green: rgba(26, 83, 92, 1);
-$medium-turquoise: rgba(78, 205, 196, 1);
-$mint-cream: rgba(247, 255, 247, 1);
-$bittersweet: rgba(255, 107, 107, 1);
-$naples-yellow: rgba(255, 230, 109, 1); */
+@import "../scss/variables.scss";
 
 .home-section.text-center {
-  background-color: #f7fff7ff;
+  background-color: $mint-cream;
 }
+
 .skewed-bg {
   padding-top: 150px;
-  background: #ff6b6bff;
-  color: #f7fff7ff;
+  background: $bittersweet;
+  color: $mint-cream;
   position: relative;
   overflow: hidden;
   box-sizing: content-box;
@@ -30,8 +16,8 @@ $naples-yellow: rgba(255, 230, 109, 1); */
 .skewed-bg-bottom {
   height: 23vh;
   padding-top: 150px;
-  background: #ff6b6bff;
-  color: #f7fff7ff;
+  background: $bittersweet;
+  color: $mint-cream;
   position: relative;
   overflow: hidden;
   box-sizing: content-box;
@@ -66,7 +52,7 @@ $naples-yellow: rgba(255, 230, 109, 1); */
 }
 
 .dark-green-text {
-  color: #1a535cff;
+  color: #1b565f;
 }
 
 .turquoise-text {
@@ -74,11 +60,17 @@ $naples-yellow: rgba(255, 230, 109, 1); */
 }
 
 .light-text {
-  color: #f7fff7ff;
+  color: $mint-cream;
 }
 
 .about-section {
+  background-color: $baby-blue;
   text-align: left;
+}
+
+.projects-section {
+  background-color: $baby-blue;
+  text-align: right;
 }
 
 /*=================== Media Queries ===================*/

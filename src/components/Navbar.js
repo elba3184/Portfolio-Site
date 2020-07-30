@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Scroll from "./Scroll"
 import logo from "../../static/logo.png"
-import "../css/Navbar.css"
+import "../scss/Navbar.scss"
 
 export default class Header extends Component {
   constructor(props) {

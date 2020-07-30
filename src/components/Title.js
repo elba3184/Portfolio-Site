@@ -2,7 +2,7 @@ import React, { Fragment, Component } from "react"
 import { Transition } from "react-spring/renderprops"
 import Typing from "react-typing-animation"
 import TextLoop from "react-text-loop"
-import "../css/AboutButton.scss"
+import "../scss/AboutButton.scss"
 
 class TitleTransition extends Component {
   render() {

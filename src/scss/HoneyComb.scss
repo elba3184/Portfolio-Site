@@ -2,7 +2,7 @@ $hexagon-width: 350px;
 $hexagon-height: $hexagon-width * 0.58;
 $hexagon-width-professional: 370px;
 $hexagon-height-professional: $hexagon-width-professional * 0.58;
-$hexagon-margin: 35px;
+$hexagon-margin: 50px;
 $hexagon-title-color: #fff;
 $hexagon-border-color: #fff;
 $hexagon-border-color--hover: #ffe66dff;
@@ -10,8 +10,14 @@ $hexagon-image-color: #3ea0eb;
 $honeycomb-max-width: 1200px;
 $viewport-thereshold: $hexagon-width + $hexagon-margin;
 $bittersweet: #ff6b6bff;
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-//   font-family: 'Montserrat', sans-serif;
+@import "../scss/variables.scss";
+@import url("https:fonts.googleapis.com/css?family=Montserrat:400,700");
+
+.honeycomb-container {
+  height: 90vh;
+  z-index: inherit;
+  background-color: $mint-cream;
+}
 
 .honeycomb-cell.professional {
   flex: 0 1 $hexagon-width-professional;
@@ -173,6 +179,11 @@ $bittersweet: #ff6b6bff;
     width: $hexagon-width;
     margin: 0 $hexagon-margin/2;
   }
+}
+
+.honeycomb.level-2 {
+  z-index: 2;
+  padding-top: 30px;
 }
 
 @media (max-width:#{2*$viewport-thereshold}) {

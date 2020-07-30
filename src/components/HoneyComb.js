@@ -1,16 +1,15 @@
 import React from "react"
-import img1 from "../../static/photo-1.png"
 import img2 from "../../static/photo-2.png"
 import img3 from "../../static/photo-3.png"
 import img4 from "../../static/photo-4.png"
 import img5 from "../../static/photo-5.png"
 import img6 from "../../static/photo-6.png"
-import "../css/HoneyComb.scss"
+import "../scss/HoneyComb.scss"
 
 const Images = () => {
   return (
-    <div>
-      <ul className="honeycomb">
+    <div className="honeycomb-container">
+      <ul className="honeycomb level-1">
         <li className="honeycomb-cell">
           <img className="honeycomb-cell__image right" src={img2} />
           <div className="honeycomb-cell__title">
@@ -26,11 +25,12 @@ const Images = () => {
         <li className="honeycomb-cell">
           <img className="honeycomb-cell__image center" src={img4} />
           <div className="honeycomb-cell__title">
-            Ironhack <small>Day 1</small>
+            Ironhack <small>First Day</small>
           </div>
         </li>
       </ul>
-      <ul className="honeycomb">
+
+      <ul className="honeycomb level-2">
         <li className="honeycomb-cell">
           <img className="honeycomb-cell__image left" src={img6} />
           <div className="honeycomb-cell__title">

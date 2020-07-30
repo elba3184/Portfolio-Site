@@ -2,8 +2,8 @@ import React, { Fragment } from "react"
 import profressional from "../../static/professional.png"
 import HoneyCombImages from "../components/HoneyComb"
 import CodeSnippet from "../components/CodeSnippet"
-import "../css/HoneyComb.scss"
-import "../css/About.css"
+import "../scss/HoneyComb.scss"
+import "../scss/About.scss"
 
 const About = () => {
   return (
@@ -22,8 +22,8 @@ const About = () => {
           </div>
           <CodeSnippet />
         </div>
-        <HoneyCombImages />
       </div>
+        <HoneyCombImages />
       <div className="about-me-bottom"></div>
     </Fragment>
   )
