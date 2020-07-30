@@ -6,7 +6,7 @@
 
 .skewed-bg {
   padding-top: 150px;
-  background: $bittersweet;
+  background: $light-coral;
   color: $mint-cream;
   position: relative;
   overflow: hidden;
@@ -16,7 +16,7 @@
 .skewed-bg-bottom {
   height: 23vh;
   padding-top: 150px;
-  background: $bittersweet;
+  background: $light-coral;
   color: $mint-cream;
   position: relative;
   overflow: hidden;
@@ -64,13 +64,20 @@
 }
 
 .about-section {
-  background-color: $baby-blue;
+  background-color: $carolina-blue;
   text-align: left;
 }
 
+.skills-section {
+  background-color: $pale-purple-pantone;
+}
+
 .projects-section {
-  background-color: $baby-blue;
-  text-align: right;
+  background-color: $pale-purple-pantone;
+}
+
+.contact-section {
+  background-color: $medium-champagne;
 }
 
 /*=================== Media Queries ===================*/

@@ -2,11 +2,11 @@ import React, { Fragment } from "react"
 import { Helmet } from "react-helmet"
 import Home from "../pages/Home"
 import Navbar from "../components/Navbar"
-// import Footer from "../components/Footer"
 import About from "../pages/About"
 import Skills from "../components/Skills"
 import Projects from "../pages/Projects"
-// import Contact from "../pages/Contact"
+import Contact from "../pages/Contact"
+import Footer from "../components/Footer"
 import "../scss/Home.scss"
 
 const IndexPage = () => (
@@ -32,7 +32,7 @@ const IndexPage = () => (
         crossorigin="anonymous"
       />
       <body>
-        {/* {`<div id="___gatsby"></div>
+        {`<div id="___gatsby"></div>
           <script src="/commons.js"></script>
           <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -49,8 +49,7 @@ const IndexPage = () => (
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous"
           ></script>
-          <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-          `} */}
+          `}
       </body>
     </Helmet>
     <Navbar />
@@ -63,13 +62,16 @@ const IndexPage = () => (
     <section id="skills" className="skills-section">
       <Skills />
     </section>
-    {/* <section id="projects" className="about-section text-center">
+    <section id="projects" className="projects-section text-center">
       <Projects />
-    </section> */}
-    {/* <section id="contact" className="contact-section text-center">
+    </section>
+    <section id="contact" className="contact-section text-center">
       <Contact />
     </section>
-    <Footer /> */}
+    <div className="footer-container">
+      {" "}
+      <Footer />
+    </div>
   </Fragment>
 )
 

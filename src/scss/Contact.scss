@@ -1,5 +1,59 @@
-.navbar {
-  background-color: #4ecdc4ff;
-  height: 80px;
-  width: 100vw;
+@import "../scss/variables.scss";
+
+.contact-container {
+  height: 60vh;
+}
+
+.footer-container {
+  .navbar {
+    padding: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $lavender-floral;
+  }
+}
+
+.flex-container {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  .flex-item {
+    font-size: 30pt;
+    justify-content: center;
+    & a {
+      color: #262626;
+      text-decoration: none;
+    }
+    &.gmail {
+      font-size: 30pt;
+      margin-bottom: 8px;
+    }
+    &.github {
+      margin-top: 4px;
+      font-size: 32pt;
+    }
+    &.linkedin {
+      margin-top: 6px;
+      font-size: 28pt;
+    }
+    &.dev {
+      margin-bottom: 5px;
+      font-size: 30pt;
+    }
+    .iconify-icon {
+      height: 133.34px;
+      width: 133px;
+    }
+    & :hover {
+      color: $medium-turquoise;
+    }
+  }
+}
+
+.footer-title {
+  color: $mint-cream;
 }

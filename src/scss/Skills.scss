@@ -1,8 +1,8 @@
 @import "../scss/variables.scss";
 
 .skills-container {
-  height: 100vh;
-  background-color: $baby-blue;
+  height: 140vh;
+  background-color: $carolina-blue;
   padding: 0 100px;
   .title {
     padding: 120px 20px 0 0;
@@ -11,6 +11,7 @@
     text-align: right;
   }
 }
+
 .skills-item-container {
   display: flex;
   flex-direction: row;
@@ -21,11 +22,11 @@
   .flex-item {
     color: #262626;
     font-size: 100pt;
-    padding-top: 80px;
+    padding-top: 50px;
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    .redux-icon {
+    .iconify-icon {
       height: 133.34px;
       width: 133px;
       & svg {
@@ -41,6 +42,14 @@
   }
 }
 
-.flex-item .skills-container-bottom {
-  clip-path: polygon(79% 15%, 0 0, 100% 0);
+.currently-learning {
+  padding-top: 30px;
+  color: $mint-cream;
+  font-size: 25pt;
+}
+
+.skills-container-bottom {
+  height: 25vh;
+  background-color: $carolina-blue;
+  clip-path: polygon(79% 45%, 0 0, 100% 0);
 }

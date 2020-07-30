@@ -9,7 +9,7 @@ $hexagon-border-color--hover: #ffe66dff;
 $hexagon-image-color: #3ea0eb;
 $honeycomb-max-width: 1200px;
 $viewport-thereshold: $hexagon-width + $hexagon-margin;
-$bittersweet: #ff6b6bff;
+$light-coral: #ff6b6bff;
 @import "../scss/variables.scss";
 @import url("https:fonts.googleapis.com/css?family=Montserrat:400,700");
 
@@ -57,7 +57,7 @@ $bittersweet: #ff6b6bff;
       transition: opacity 350ms;
 
       > small {
-        color: $bittersweet;
+        color: $light-coral;
         font-weight: 300;
         margin-top: 0.25em;
       }
@@ -157,7 +157,7 @@ $bittersweet: #ff6b6bff;
         transition: opacity 350ms;
 
         > small {
-          color: $bittersweet;
+          color: $light-coral;
           font-weight: 300;
           margin-top: 0.25em;
         }
