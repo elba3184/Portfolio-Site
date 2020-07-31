@@ -69,15 +69,24 @@
 }
 
 .skills-section {
+  margin-top: 445px;
   background-color: $pale-purple-pantone;
 }
 
 .projects-section {
+  height: 70vh;
   background-color: $pale-purple-pantone;
 }
 
-.contact-section {
-  background-color: $medium-champagne;
+.page-bottom-container {
+  position: relative;
+  .contact-section {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $medium-champagne;
+  }
 }
 
 /*=================== Media Queries ===================*/

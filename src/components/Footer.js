@@ -45,7 +45,7 @@ const Footer = () => {
         </span>
       </div>
       <div className="footer-title">
-        © 2020 | Made by Elba Chimilio with &#128149; and ☕
+        © 2020 | Made by Elba Chimilio with &#128149;and ☕
       </div>
     </nav>
   )

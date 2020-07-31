@@ -15,7 +15,11 @@ $light-coral: #ff6b6bff;
 
 .honeycomb-container {
   height: 90vh;
-  z-index: inherit;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
   background-color: $mint-cream;
 }
 

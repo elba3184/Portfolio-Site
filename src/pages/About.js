@@ -23,8 +23,11 @@ const About = () => {
           <CodeSnippet />
         </div>
       </div>
+      <div className="honeycomb-bottom-wrapper">
+        {" "}
         <HoneyCombImages />
-      <div className="about-me-bottom"></div>
+        <div className="about-me-bottom"></div>
+      </div>
     </Fragment>
   )
 }

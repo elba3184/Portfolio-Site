@@ -25,7 +25,8 @@
 }
 
 .about-me-bottom {
-  height: 200px;
+  top: 688px;
+  height: 240px;
   background-color: $mint-cream;
   position: relative;
   overflow: hidden;
@@ -43,6 +44,11 @@
 .img-3 {
   width: 350px;
   height: 500px;
+}
+
+.honeycomb-bottom-wrapper {
+  position: relative;
+  width: 100%;
 }
 
 /*=================== Media Queries ===================*/

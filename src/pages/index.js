@@ -65,12 +65,14 @@ const IndexPage = () => (
     <section id="projects" className="projects-section text-center">
       <Projects />
     </section>
-    <section id="contact" className="contact-section text-center">
-      <Contact />
-    </section>
-    <div className="footer-container">
-      {" "}
-      <Footer />
+    <div className="page-bottom-container">
+      <section id="contact" className="contact-section text-center">
+        <Contact />
+      </section>
+      <div className="footer-container">
+        {" "}
+        <Footer />
+      </div>
     </div>
   </Fragment>
 )

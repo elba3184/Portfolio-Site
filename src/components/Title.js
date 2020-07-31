@@ -49,26 +49,26 @@ class SubtitleTransition extends Component {
                 <span className="dark-green-text">
                   FULL-STACK WEB DEVELOPER <span role="img">👩🏽‍💻</span>
                 </span>
+                <span className="light-text">
+                  TIKTOK ADDICT <span role="img">💃</span>
+                </span>
                 <span>
                   <span className="light-text">ARTIST </span>
                   <span role="img">🎨</span>
                 </span>
-                <span>
-                  <span className="dark-green-text">IRONHACK ALUMN </span>
-                  <span role="img">👩🏽‍🎓</span>
+                <span className="dark-green-text">
+                  FLORIDA GATOR <span role="img">🐊</span>
+                </span>
+                <span className="dark-green-text">
+                  MOVIE ENTHUSIAST <span role="img">🎬</span>
                 </span>
                 <span>
                   <span className="light-text">ADVENTURER </span>
                   <span role="img">🌎</span>
                 </span>
-                <span className="dark-green-text">
-                  FLORIDA GATOR <span role="img">🐊</span>
-                </span>
-                <span className="light-text">
-                  TIKTOK ADDICT <span role="img">💃</span>
-                </span>
-                <span className="dark-green-text">
-                  MOVIE ENTHUSIAST <span role="img">🎬</span>
+                <span>
+                  <span className="dark-green-text">IRONHACK ALUMN </span>
+                  <span role="img">👩🏽‍🎓</span>
                 </span>
                 <span className="light-text">
                   ANIMAL CROSSING EXPERT <span role="img">🐶</span>

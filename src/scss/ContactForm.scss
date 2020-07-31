@@ -1,0 +1,49 @@
+@import "../scss/variables.scss";
+
+.contact-form-container {
+  width: 80vh;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $mint-cream;
+  border-radius: 10px;
+  .form {
+    width: 100%;
+  }
+  .form-items {
+    padding: 40px 80px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    .asterisk-red {
+      color: $light-coral;
+    }
+    input,
+    textarea {
+      width: 100%;
+    }
+    input {
+      height: 40px;
+      & .focus-visible {
+        border: 1px solid red;
+      }
+    }
+    h6 {
+      padding-bottom: 5px;
+    }
+    label {
+      font-size: 14px;
+      color: #555555;
+      text-transform: uppercase;
+      text-align: left;
+      width: 100%;
+      padding-bottom: 20px;
+    }
+  }
+  .submit-button-container {
+    padding: 20px 250px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
