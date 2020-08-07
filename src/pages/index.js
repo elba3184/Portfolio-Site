@@ -65,15 +65,14 @@ const IndexPage = () => (
     <section id="projects" className="projects-section text-center">
       <Projects />
     </section>
-    <div className="page-bottom-container">
+    {/* <div className="contact-container">
       <section id="contact" className="contact-section text-center">
         <Contact />
       </section>
       <div className="footer-container">
-        {" "}
         <Footer />
       </div>
-    </div>
+    </div> */}
   </Fragment>
 )
 

@@ -1,5 +1,11 @@
 @import "../scss/variables.scss";
 
 .projects-container {
-  height: 80vh;
+  height: 151vh;
+  background-color: $pale-purple-pantone;
+}
+.projects-container-bottom {
+  height: 500px;
+  background-color: $pale-purple-pantone;
+  clip-path: polygon(100% 25%, 0 0, 100% 0);
 }

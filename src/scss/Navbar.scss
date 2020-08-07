@@ -1,7 +1,12 @@
 @import "../scss/variables.scss";
 
-.navbar {
-  background-color: #4ecdc4ff;
+.navbar.navbar-expand-lg.fixed-top.navbar-shrink {
+  background-color: $medium-turquoise;
+}
+
+.navbar.navbar-expand-lg.fixed-top {
+  background-color: $light-coral;
+  transition: all ease-in-out 200ms;
   height: 80px;
 }
 

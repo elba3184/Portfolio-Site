@@ -14,39 +14,45 @@ const Skills = () => {
       <div className="skills-container">
         <div className="title">SKILLS & TOOLS</div>
         <div className="skills-item-container">
-          <span className="flex-item">
+          <span className="flex-item js">
+            {/* <a
+              href="https://www.javascript.com/"
+              target="_blank"
+              alt="JavaScript"
+            > */}
             <i className="devicon-javascript-plain"></i>
+            {/* </a> */}
           </span>
-          <span className="flex-item">
+          <span className="flex-item react">
             <i className="devicon-react-original-wordmark"></i>
           </span>
-          <span className="flex-item">
+          <span className="flex-item redux">
             <div className="iconify-icon">
               <Icon icon={reduxIcon} />
             </div>
           </span>
-          <span className="flex-item">
+          <span className="flex-item node">
             <i className="devicon-nodejs-plain"></i>
           </span>
-          <span className="flex-item">
+          <span className="flex-item node">
             <i class="devicon-express-original"></i>
           </span>
-          <span className="flex-item">
+          <span className="flex-item html5">
             <i className="devicon-html5-plain-wordmark"></i>
           </span>
-          <span className="flex-item">
+          <span className="flex-item css3">
             <i className="devicon-css3-plain-wordmark"></i>
           </span>
-          <span className="flex-item">
+          <span className="flex-item sass">
             <i className="devicon-sass-original"></i>
           </span>
         </div>
 
         <div className="skills-item-container">
-          <span className="flex-item">
+          <span className="flex-item api">
             <Icon icon={apiIcon} />
           </span>
-          <span className="flex-item">
+          <span className="flex-item git">
             <i className="devicon-git-plain-wordmark"></i>
           </span>
           <span className="flex-item">

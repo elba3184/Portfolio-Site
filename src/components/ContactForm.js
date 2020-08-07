@@ -36,11 +36,11 @@ class ContactForm extends Component {
                 </h6>
                 <textarea name="message" required id="message" rows="5" />
               </label>
+              <input type="reset" value="Clear" />
             </div>
             <div className="submit-button-container">
               {" "}
               <button type="submit">Send</button>
-              <input type="reset" value="Clear" />
             </div>
           </form>
         </div>
