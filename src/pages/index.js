@@ -34,6 +34,7 @@ const IndexPage = () => (
       <body>
         {`<div id="___gatsby"></div>
           <script src="/commons.js"></script>
+          <script src="dark-mode-switch.min.js"></script>
           <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -65,14 +66,14 @@ const IndexPage = () => (
     <section id="projects" className="projects-section text-center">
       <Projects />
     </section>
-    {/* <div className="contact-container">
+    <div className="contact-container">
       <section id="contact" className="contact-section text-center">
         <Contact />
       </section>
       <div className="footer-container">
         <Footer />
       </div>
-    </div> */}
+    </div>
   </Fragment>
 )
 

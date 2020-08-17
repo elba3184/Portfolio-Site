@@ -43,12 +43,7 @@ const CodeSnippet = () => {
             I began my journey into software development back in August 2014.
           </span>
           <span>
-            While attending the <b>University of Florida</b>, I took Mathematics
-            and Computer
-          </span>
-          <span>
-            Science coursework on top of my Philosophy classes. Naturally, I
-            became
+            While attending the <b>University of Florida</b>, I became
           </span>
           <span>
             addicted to Starbucks coffee{" "}
@@ -95,12 +90,16 @@ const CodeSnippet = () => {
           <span>
             in <b>New York City (The Big 🍎)!</b>
           </span>
+          {/* <span></span> */}
+          <span>
+            ⚡️ Fun fact: <i>I'm good at memorizing commercial jingles</i>
+          </span>
           {/* <span>
             - 🌱 I’m currently learning **Serverless Framework, AWS Services and
             Gatsby**
           </span>
           <span>
-            - ⚡ Fun fact **I'm good at memorizing commercial jingles**
+            
           </span> */}
         </pre>
       </div>

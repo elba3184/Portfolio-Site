@@ -2,14 +2,9 @@
 
 .contact-container {
   z-index: 1;
-  height: 90vh;
-  padding-top: 120px;
-  display: flex;
-  position: absolute;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
   .contact-title {
+    padding-top: 110px;
     font-size: 30pt;
     color: $light-coral;
   }

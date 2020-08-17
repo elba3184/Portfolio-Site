@@ -4,6 +4,7 @@ import awsIcon from "@iconify/icons-mdi/aws"
 import apiIcon from "@iconify/icons-mdi/api"
 import reduxIcon from "@iconify/icons-cib/redux"
 import gatsbyIcon from "@iconify/icons-cib/gatsby"
+import postmanIcon from "@iconify/icons-cib/postman"
 import firebaseIcon from "@iconify/icons-cib/firebase"
 import serverlessIcon from "@iconify/icons-gg/serverless"
 import "../scss/Skills.scss"
@@ -26,11 +27,11 @@ const Skills = () => {
           <span className="flex-item react">
             <i className="devicon-react-original-wordmark"></i>
           </span>
-          <span className="flex-item redux">
+          {/* <span className="flex-item redux">
             <div className="iconify-icon">
               <Icon icon={reduxIcon} />
             </div>
-          </span>
+          </span> */}
           <span className="flex-item node">
             <i className="devicon-nodejs-plain"></i>
           </span>
@@ -63,13 +64,13 @@ const Skills = () => {
             <i className="devicon-github-plain-wordmark"></i>
           </span>
           <span className="flex-item">
-            {" "}
-            <i className="devicon-heroku-line-wordmark"></i>
+            <div className="iconify-icon">
+              <Icon icon={postmanIcon} />
+            </div>
           </span>
           <span className="flex-item">
-            <div className="iconify-icon">
-              <Icon icon={firebaseIcon} />
-            </div>
+            {" "}
+            <i className="devicon-heroku-line-wordmark"></i>
           </span>
           <span className="flex-item">
             {" "}
@@ -79,6 +80,11 @@ const Skills = () => {
         <div className="currently-learning">
           Currently learning:
           <div className="skills-item-container">
+            <span className="flex-item redux">
+              <div className="iconify-icon">
+                <Icon icon={reduxIcon} />
+              </div>
+            </span>
             <span className="flex-item">
               <div className="iconify-icon">
                 <Icon icon={serverlessIcon} />
@@ -87,6 +93,11 @@ const Skills = () => {
             <span className="flex-item">
               <div className="iconify-icon">
                 <Icon icon={awsIcon} />
+              </div>
+            </span>
+            <span className="flex-item">
+              <div className="iconify-icon">
+                <Icon icon={firebaseIcon} height="120px" width="120px" />
               </div>
             </span>
             <span className="flex-item">

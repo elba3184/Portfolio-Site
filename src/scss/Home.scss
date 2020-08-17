@@ -1,5 +1,12 @@
 @import "../scss/variables.scss";
 
+body {
+  [data-theme="dark"] {
+    background-color: #111 !important;
+    color: #eee;
+  }
+}
+
 .home-section.text-center {
   background-color: $mint-cream;
 }
@@ -80,7 +87,7 @@
 .contact-container {
   position: relative;
   .contact-section {
-    height: 80vh;
+    height: 105vh;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Scroll from "./Scroll"
-import logo from "../../static/logo.png"
+import logo from "../../static/logo.jpeg"
 import "../scss/Navbar.scss"
 
 export default class Header extends Component {
@@ -120,6 +120,16 @@ export default class Header extends Component {
                   </a>
                 </Scroll>
               </li>
+              {/* <div class="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="darkSwitch"
+                />
+                <label class="custom-control-label" for="darkSwitch">
+                  Dark Mode
+                </label>
+              </div> */}
             </ul>
           </div>
         </div>

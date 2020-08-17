@@ -40,7 +40,7 @@ class SubtitleTransition extends Component {
           (props => (
             <div style={props} className="subtitle-options">
               <TextLoop
-                interval={4000}
+                interval={3000}
                 delay={1800}
                 noWrap={true}
                 mask={true}
@@ -51,6 +51,10 @@ class SubtitleTransition extends Component {
                 </span>
                 <span className="light-text">
                   TIKTOK ADDICT <span role="img">💃</span>
+                </span>
+                <span>
+                  <span className="dark-green-text">COMICBOOK FANATIC </span>
+                  <span role="img">🦸‍♀️</span>
                 </span>
                 <span>
                   <span className="light-text">ARTIST </span>

@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Fragment>
       <div className="skewed-bg">
-        <ConfettiAnimation />
+        {/* <ConfettiAnimation /> */}
         <div className="title-container">
           <div className="title-center">
             <Title />
