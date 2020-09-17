@@ -3,13 +3,13 @@
 .contact-form-container {
   width: 80vh;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: $mint-cream;
   border-radius: 10px;
   .form {
     width: 100%;
+  }
+  .form-row {
+    display: flex;
+    flex-direction: row;
   }
   .form-items {
     padding: 40px 80px 20px 80px;
@@ -33,16 +33,56 @@
     }
     label {
       font-size: 14px;
-      color: #555555;
+      color: white;
       text-transform: uppercase;
       text-align: left;
       width: 100%;
       padding-bottom: 20px;
     }
+    .clear-btn {
+      width: 130px;
+      height: 50px;
+      display: flex;
+      font-size: 16pt;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      border: 1px solid $purple;
+      background-color: transparent;
+      &:hover,
+      &:active,
+      &:focus {
+        outline: none;
+        border: 1px solid $purple;
+        background-color: $purple;
+      }
+    }
   }
   .submit-button-container {
     padding: 20px 250px;
+    color: white;
     display: flex;
     flex-direction: column-reverse;
+    button {
+      width: 130px;
+      height: 50px;
+      display: flex;
+      font-size: 16pt;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      border: 1px solid white;
+      background-color: transparent;
+      &:hover,
+      &:active,
+      &:focus {
+        outline: none;
+        color: white;
+        border: 1px solid $vivid-sky-blue;
+        background-color: $vivid-sky-blue;
+      }
+    }
   }
 }

@@ -1,24 +1,14 @@
 @import "../scss/variables.scss";
 
-$javaScript: #f7e017;
-$react: #60dbfb;
-$redux: #7448b7;
-$node: #87c049;
-$html5: #eb6327;
-$css3: #2161aa;
-$sass: #c76495;
-$api: #4282f4;
-$git: #f0512f;
-
 .skills-container {
-  height: 145vh;
-  background-color: $carolina-blue;
+  height: 160vh;
+  background-color: $dark-blue;
   padding: 0 100px;
   .title {
     padding: 200px 20px 0 0;
-    color: $mint-cream;
-    font-size: 30pt;
-    text-align: right;
+    color: $sky-blue;
+    font-size: 40pt;
+    text-align: center;
   }
 }
 
@@ -29,20 +19,8 @@ $git: #f0512f;
   justify-content: space-around;
   align-content: stretch;
   align-items: flex-start;
-  // .flex-item.redux {
-  //   .iconify-icon {
-  //     height: 133.34px;
-  //     width: 133px;
-  //     & svg {
-  //       margin-bottom: 50px;
-  //     }
-  //     & svg path:hover {
-  //       color: $redux;
-  //     }
-  //   }
-  // }
   .flex-item {
-    color: #262626;
+    color: white;
     font-size: 100pt;
     padding-top: 50px;
     order: 0;
@@ -57,47 +35,24 @@ $git: #f0512f;
       }
 
       & svg path:hover {
-        fill: $naples-yellow;
+        fill: $turquoise;
       }
     }
-    // &.js :hover {
-    //   color: $javaScript;
-    // }
-    // &.react :hover {
-    //   color: $react;
-    // }
-    // &.node :hover {
-    //   color: $node;
-    // }
-    // &.html5 :hover {
-    //   color: $html5;
-    // }
-    // &.css3 :hover {
-    //   color: $css3;
-    // }
-    // &.sass :hover {
-    //   color: $sass;
-    // }
-    // &.api :hover {
-    //   color: $api;
-    // }
-    // &.git :hover {
-    //   color: $git;
-    // }
     & :hover {
-      color: $naples-yellow;
+      color: $turquoise;
     }
   }
 }
 
 .currently-learning {
   padding-top: 30px;
-  color: $mint-cream;
-  font-size: 25pt;
+  color: $sky-blue;
+  font-size: 40pt;
+  text-align: center;
 }
 
 .skills-container-bottom {
   height: 25vh;
-  background-color: $carolina-blue;
+  background-color: $dark-blue;
   clip-path: polygon(79% 45%, 0 0, 100% 0);
 }

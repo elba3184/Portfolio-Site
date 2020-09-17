@@ -2,24 +2,30 @@ import React, { Fragment, Component } from "react"
 import { Transition } from "react-spring/renderprops"
 import Typing from "react-typing-animation"
 import TextLoop from "react-text-loop"
-import "../scss/AboutButton.scss"
+import "../scss/CustomizedButton.scss"
 
 class TitleTransition extends Component {
   render() {
     return (
       <Fragment>
-        <Typing speed={120}>
-          <div className="title">WELCOME!</div>
+        <Typing speed={30} className="hello-wrapper">
+          <div className="title">Hello, my name is</div>
         </Typing>
-        <Typing speed={40}>
-          <Typing.Delay ms={1800} />
-          <div>
+        <Typing speed={80} className="subtitle-wrapper">
+          <Typing.Delay ms={1600} />
+          <div className="subtitle-container">
             <div className="subtitle">
-              My name is <span className="dark-green-text">Elba</span> and I'm a
-              <span className="dark-green-text">(n)</span>
+              <span className="sky-blue-text">Elba Chimilio</span>
             </div>
           </div>
         </Typing>
+        <div className="description">
+          <Typing>
+            <Typing.Delay ms={3200} />
+            <div className="subtitle-white">I'm a(n) </div>
+          </Typing>
+          <SubtitleTransition />
+        </div>
       </Fragment>
     )
   }
@@ -40,42 +46,43 @@ class SubtitleTransition extends Component {
           (props => (
             <div style={props} className="subtitle-options">
               <TextLoop
-                interval={3000}
-                delay={1800}
+                className="text-loop-wrapper"
+                interval={3200}
+                delay={1400}
                 noWrap={true}
                 mask={true}
-                springConfig={{ stiffness: "340", damping: "30" }}
+                springConfig={{ stiffness: "320", damping: "40" }}
               >
-                <span className="dark-green-text">
-                  FULL-STACK WEB DEVELOPER <span role="img">👩🏽‍💻</span>
-                </span>
                 <span className="light-text">
-                  TIKTOK ADDICT <span role="img">💃</span>
+                  Tiktok Addict <span role="img">💃</span>
+                </span>
+                <span className="sky-blue-text">
+                  Full-Stack Developer <span role="img">👩🏽‍💻</span>
                 </span>
                 <span>
-                  <span className="dark-green-text">COMICBOOK FANATIC </span>
+                  <span className="purple-text">Comicbook Fanatic </span>
                   <span role="img">🦸‍♀️</span>
                 </span>
                 <span>
-                  <span className="light-text">ARTIST </span>
+                  <span className="light-text">Artist </span>
                   <span role="img">🎨</span>
                 </span>
-                <span className="dark-green-text">
-                  FLORIDA GATOR <span role="img">🐊</span>
+                <span className="sky-blue-text">
+                  Florida Gator <span role="img">🐊</span>
                 </span>
-                <span className="dark-green-text">
-                  MOVIE ENTHUSIAST <span role="img">🎬</span>
+                <span className="light-text">
+                  Movie Enthusiast <span role="img">🎬</span>
                 </span>
                 <span>
-                  <span className="light-text">ADVENTURER </span>
+                  <span className="purple-text">Adventurer </span>
                   <span role="img">🌎</span>
                 </span>
                 <span>
-                  <span className="dark-green-text">IRONHACK ALUMN </span>
+                  <span className="sky-blue-text">Ironhack Alumn </span>
                   <span role="img">👩🏽‍🎓</span>
                 </span>
                 <span className="light-text">
-                  ANIMAL CROSSING EXPERT <span role="img">🐶</span>
+                  Animal Crossing Expert <span role="img">🐶</span>
                 </span>
               </TextLoop>{" "}
             </div>
@@ -89,9 +96,8 @@ class SubtitleTransition extends Component {
 const Title = () => {
   return (
     <Fragment>
-      <TitleTransition />
-      <div className="subtitle-container">
-        <SubtitleTransition />
+      <div className="title-wrapper">
+        <TitleTransition />
       </div>
     </Fragment>
   )

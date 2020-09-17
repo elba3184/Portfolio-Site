@@ -1,6 +1,35 @@
-$bg: #f7fff7ff;
-$white: #fff;
-$dark-green: #1a535cff;
+@import "../scss/variables.scss";
+
+.about-btn,
+.projects-btn {
+  width: 130px;
+  height: 50px;
+  display: flex;
+  font-size: 16pt;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-color: transparent;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    border: 1px solid $vivid-sky-blue;
+    background-color: $vivid-sky-blue;
+  }
+}
+
+.about-btn a,
+.projects-btn a {
+  color: white;
+  text-decoration: none;
+  &:hover,
+  &:active {
+    color: white;
+    text-decoration: none;
+  }
+}
 
 @mixin transition(
   $property: all,
@@ -10,19 +39,19 @@ $dark-green: #1a535cff;
   transition: $property $duration $ease;
 }
 
-.about-btn {
-  color: $dark-green;
+.resume-btn {
+  color: $turquoise;
   text-decoration: none;
 }
 
-.about-btn:hover,
-#about-btn-container:hover,
-#about-btn-container a:hover {
-  color: white;
+.resume-btn:hover,
+#resume-btn-container:hover,
+#resume-btn-container a:hover {
+  color: $oxford-blue;
   text-decoration: none;
 }
 
-#about-btn-container button {
+#resume-btn-container button {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -34,8 +63,8 @@ $dark-green: #1a535cff;
   padding: 0;
   font-size: inherit;
   font-family: inherit;
-  &.about-me {
-    color: $white;
+  &.resume {
+    color: $oxford-blue;
     width: 12rem;
     height: auto;
     .circle {
@@ -45,8 +74,8 @@ $dark-green: #1a535cff;
       margin: 0;
       width: 3rem;
       height: 3rem;
-      color: $white;
-      background: $dark-green;
+      color: $oxford-blue;
+      background: $turquoise;
       border-radius: 1.625rem;
       .icon {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -54,7 +83,7 @@ $dark-green: #1a535cff;
         top: 0;
         bottom: 0;
         margin: auto;
-        background: $white;
+        background: $oxford-blue;
         &.arrow {
           @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
           left: 0.625rem;
@@ -62,15 +91,15 @@ $dark-green: #1a535cff;
           height: 0.125rem;
           background: none;
           &::before {
-            color: $white;
+            color: $oxford-blue;
             position: absolute;
             content: "";
             top: -0.25rem;
             right: 0.0625rem;
             width: 0.625rem;
             height: 0.625rem;
-            border-top: 0.125rem solid #fff;
-            border-right: 0.125rem solid #fff;
+            border-top: 0.125rem solid $oxford-blue;
+            border-right: 0.125rem solid $oxford-blue;
             transform: rotate(45deg);
           }
         }
@@ -85,7 +114,7 @@ $dark-green: #1a535cff;
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1.85rem;
-      color: $white;
+      color: $oxford-blue;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
@@ -97,18 +126,33 @@ $dark-green: #1a535cff;
       width: 100%;
       .icon {
         &.arrow {
-          background: $white;
+          background: $oxford-blue;
           transform: translate(1rem, 0);
         }
       }
     }
     .button-text,
-    .about-btn {
-      color: $white;
+    .resume-btn {
+      color: $oxford-blue;
       text-decoration: none;
     }
   }
   .circle:hover {
-    color: $white;
+    color: $oxford-blue;
   }
 }
+
+@media (max-width: 430px) {
+  .about-btn,
+  .projects-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 14pt;
+  }
+}
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+*/

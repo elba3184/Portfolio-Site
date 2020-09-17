@@ -27,7 +27,7 @@ import "../scss/CodeSnippet.scss"
 const CodeSnippet = () => {
   return (
     <Fragment>
-      <div class="read-me-container">
+      <div className="read-me-container">
         <pre>
           <span>README.md</span>
           <span className="read-me-title">

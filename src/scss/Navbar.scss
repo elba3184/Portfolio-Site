@@ -1,46 +1,269 @@
 @import "../scss/variables.scss";
 
-.navbar.navbar-expand-lg.fixed-top.navbar-shrink {
-  background-color: $medium-turquoise;
-}
-
-.navbar.navbar-expand-lg.fixed-top {
-  background-color: $light-coral;
+@mixin navbarDesktop {
+  position: fixed;
+  background-color: transparent;
   transition: all ease-in-out 200ms;
   height: 80px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
-.navbar-nav .nav-link {
-  color: $mint-cream;
-  font-weight: 500;
+#mainNav {
+  .navbar.navbar-expand-lg {
+    background-color: $oxford-blue;
+    transition: all ease-in-out 200ms;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .navbar-nav .nav-link {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+}
+.navbar.navbar-expand-lg.navbar-shrink {
+  background-color: $oxford-blue;
+  box-shadow: 0 4px 6px -6px $dark-blue;
 }
 
-.nav-link::after {
-  content: "";
-  display: block;
-  height: 2px;
-  background: #ffe66dff;
-  position: absolute;
-  width: 0%;
-  transition: all ease-in-out 250ms;
+.menu-opened,
+.menu-closed {
+  font-size: 30pt;
+  color: white;
 }
 
-.nav-link:hover::after {
-  color: #ffe66dff;
-  width: 3.8%;
+// .logo {
+//   height: 55px;
+//   width: 55px;
+//   border-radius: 50%;
+// }
+
+/*=================== Media Queries ===================*/
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #mainNav {
+    background-color: $oxford-blue;
+    .navbar-nav .nav-link {
+      color: white;
+      font-size: 16pt;
+      font-weight: 500;
+    }
+  }
+  ul.navbar-nav.ml-auto,
+  ul.navbar-nav.mx-auto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-item-hover,
+  .nav-item-contact {
+    width: 0%;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      width: 40%;
+      display: flex;
+      align-items: inherit;
+      background-color: $vivid-sky-blue;
+      transition: all ease-in-out 250ms;
+    }
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    outline: none;
+    text-decoration: none;
+  }
 }
 
-.nav-link.longer:hover::after {
-  color: #ffe66dff;
-  width: 5.5%;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #mainNav {
+    background-color: $oxford-blue;
+    .navbar.navbar-expand-lg {
+      height: 80px;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+      transition: all ease-in-out 200ms;
+    }
+    .navbar-nav .nav-link {
+      color: white;
+      font-size: 16pt;
+      font-weight: 500;
+    }
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    outline: none;
+    text-decoration: none;
+  }
 }
 
-.nav-link:hover {
-  color: #ffe66dff;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #mainNav {
+    background-color: $oxford-blue;
+    .navbar.navbar-expand-lg {
+      height: 80px;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+      transition: all ease-in-out 200ms;
+    }
+    .navbar-nav .nav-link {
+      color: white;
+      font-size: 16pt;
+      font-weight: 500;
+    }
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    outline: none;
+    text-decoration: none;
+  }
 }
 
-.logo {
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #mainNav {
+    .navbar-nav .nav-link {
+      padding: 0 15px;
+    }
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+      margin: 0 3%;
+      max-width: 100vw;
+    }
+  }
+  .navbar.navbar-expand-lg {
+    @include navbarDesktop;
+  }
+  .navbar-nav.ml-auto {
+    height: 40px;
+    align-items: center;
+  }
+  .nav-item-hover:hover {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    height: 65px;
+    display: flex;
+    align-items: inherit;
+    background-color: $vivid-sky-blue;
+  }
+  .nav-item::after {
+    margin: 20px 0 0 0;
+    height: 1px;
+    width: 0%;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+  }
+  .nav-item:hover::after {
+    background-color: $vivid-sky-blue;
+    width: 6.7%;
+  }
+  .nav-item.medium:hover::after {
+    background-color: $vivid-sky-blue;
+    width: 7.5%;
+  }
+  .nav-item.long:hover::after {
+    background-color: $vivid-sky-blue;
+    width: 8.2%;
+  }
+  .nav-link.contact {
+    display: flex;
+    margin-left: 20px;
+    padding: 10px 5px;
+    height: 38px;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 25px;
+    &:hover,
+    &:active {
+      border: 1px solid $vivid-sky-blue;
+      background-color: $vivid-sky-blue;
+    }
+  }
 }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #mainNav {
+    .navbar-nav .nav-link {
+      padding: 0 15px;
+    }
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+      margin: 0 5%;
+      max-width: 100vw;
+    }
+  }
+  .navbar.navbar-expand-lg {
+    @include navbarDesktop;
+  }
+  .navbar-nav.ml-auto {
+    height: 40px;
+    align-items: center;
+  }
+  .nav-item-hover:hover {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    height: 65px;
+    display: flex;
+    align-items: inherit;
+    background-color: $vivid-sky-blue;
+  }
+  .nav-item::after {
+    margin: 20px 0 0 0;
+    height: 1px;
+    width: 0%;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+  }
+  .nav-item:hover::after {
+    width: 5%;
+    background-color: $vivid-sky-blue;
+  }
+  .nav-item.medium:hover::after {
+    width: 5.7%;
+    background-color: $vivid-sky-blue;
+  }
+  .nav-item.long:hover::after {
+    width: 6.1%;
+    background-color: $vivid-sky-blue;
+  }
+  .nav-link.contact {
+    display: flex;
+    margin-left: 20px;
+    padding: 10px 5px;
+    height: 38px;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 25px;
+    &:hover,
+    &:active {
+      border: 1px solid $vivid-sky-blue;
+      background-color: $vivid-sky-blue;
+    }
+  }
+}
+
+/*=================== Media Queries ===================*/

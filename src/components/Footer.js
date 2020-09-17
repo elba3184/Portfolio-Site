@@ -6,7 +6,7 @@ import "../scss/Contact.scss"
 
 const Footer = () => {
   return (
-    <nav class="navbar navbar-light">
+    <nav className="navbar navbar-light">
       <div className="flex-container">
         <span>
           <div className="flex-item gmail">

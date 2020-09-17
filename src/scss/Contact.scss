@@ -2,15 +2,18 @@
 
 .contact-container {
   z-index: 1;
+  background-color: $oxford-blue;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   .contact-title {
     padding-top: 110px;
-    font-size: 30pt;
-    color: $light-coral;
+    font-size: 40pt;
+    color: $turquoise;
   }
   .contact-subtitle {
-    font-size: 10pt;
-    color: $midnight-green-eagle-green;
+    font-size: 12pt;
+    color: white;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -21,11 +24,11 @@
 .footer-container {
   .navbar {
     padding: 0 0 30px 0;
-    height: 260px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: $lavender-floral;
+    background-color: $dark-blue;
   }
 }
 
@@ -39,7 +42,7 @@
     font-size: 30pt;
     justify-content: center;
     & a {
-      color: #262626;
+      color: white;
       text-decoration: none;
     }
     &.gmail {
@@ -63,12 +66,12 @@
       width: 133px;
     }
     & :hover {
-      color: $medium-turquoise;
+      color: $vivid-sky-blue;
     }
   }
 }
 
 .footer-title {
   padding-top: 5px;
-  color: $mint-cream;
+  color: white;
 }

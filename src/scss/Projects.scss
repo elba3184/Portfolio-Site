@@ -1,19 +1,22 @@
 @import "../scss/variables.scss";
 
 .projects-container {
-  height: 229vh;
-  background-color: $pale-purple-pantone;
+  color: white;
+  height: 100vh;
+  background-color: $oxford-blue;
   .title {
     padding-top: 120px;
     padding-left: 60px;
-    color: $midnight-green-eagle-green;
+    color: white;
     font-size: 30pt;
     text-align: left;
   }
 }
 
-.projects-container-bottom {
-  height: 230px;
-  background-color: $pale-purple-pantone;
-  clip-path: polygon(100% 50%, 0 0, 100% 0);
+.item-container {
+  display: flex;
+  img {
+    width: 40%;
+    height: 80%;
+  }
 }

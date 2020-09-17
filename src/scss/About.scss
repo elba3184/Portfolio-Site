@@ -3,11 +3,11 @@
 .about-me-container {
   height: 90vh;
   padding-top: 110px;
-  background-color: $mint-cream;
+  background-color: $dark-blue;
 }
 
 .about-me-title {
-  color: #555;
+  color: white;
   font-size: 30pt;
   padding-left: 60px;
 }
@@ -22,16 +22,6 @@
   border-radius: 50%;
   width: 370px;
   height: 400px;
-}
-
-.about-me-bottom {
-  top: 688px;
-  height: 240px;
-  background-color: $mint-cream;
-  position: relative;
-  overflow: hidden;
-  box-sizing: content-box;
-  clip-path: polygon(0 50%, 0 0, 100% 0);
 }
 
 .img-2,
@@ -49,6 +39,11 @@
 .honeycomb-bottom-wrapper {
   position: relative;
   width: 100%;
+}
+
+.about-me-bottom {
+  height: 120vh;
+  background-color: $dark-blue;
 }
 
 /*=================== Media Queries ===================*/

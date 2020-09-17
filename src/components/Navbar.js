@@ -1,6 +1,9 @@
 import React, { Component } from "react"
 import Scroll from "./Scroll"
-import logo from "../../static/logo.jpeg"
+import { Icon } from "@iconify/react"
+import menuIcon from "@iconify/icons-heroicons-outline/menu"
+import xIcon from "@iconify/icons-bi/x"
+// import logo from "../../static/logo.jpeg"
 import "../scss/Navbar.scss"
 
 export default class Header extends Component {
@@ -8,7 +11,7 @@ export default class Header extends Component {
     super(props)
     this.state = {
       openMenu: false,
-      visibilityClass: "",
+      visibilityClass: "top",
     }
   }
   toggleMenu = value => {
@@ -22,7 +25,7 @@ export default class Header extends Component {
       }
     } else {
       if (visibilityClass === "navbar-shrink") {
-        this.setState({ visibilityClass: "" })
+        this.setState({ visibilityClass: "top" })
       }
     }
   }
@@ -38,14 +41,14 @@ export default class Header extends Component {
     const { openMenu, visibilityClass } = this.state
     return (
       <nav
-        className={`navbar navbar-expand-lg fixed-top ${visibilityClass}`}
+        className={`navbar navbar-expand-lg ${visibilityClass} ${
+          openMenu ? "opened" : "collapsed"
+        }`}
         id="mainNav"
       >
         <div className="container">
           <Scroll type="id" element="home">
-            <a href="#">
-              <img src={logo} className="logo" />
-            </a>
+            <a href="#">{/* <img src={logo} className="logo" /> */}</a>
           </Scroll>
           <button
             onClick={() => this.toggleMenu(!openMenu)}
@@ -57,66 +60,77 @@ export default class Header extends Component {
             aria-expanded={openMenu}
             aria-label="Toggle navigation"
           >
-            Icons
-            <i className="fas fa-bars"></i>
+            {openMenu ? (
+              <Icon icon={xIcon} className="menu-closed" />
+            ) : (
+              <Icon icon={menuIcon} className="menu-opened" />
+            )}
           </button>
           <div
             className={`collapse navbar-collapse ${openMenu ? "show" : ""}`}
             id="navbarResponsive"
           >
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
+              <div className="nav-item-hover">
+                <li className="nav-item">
+                  <Scroll
+                    onClick={() => this.toggleMenu(!openMenu)}
+                    type="id"
+                    element="home"
+                  >
+                    <a className="nav-link" href="#">
+                      Home
+                    </a>
+                  </Scroll>
+                </li>
+              </div>
+              <div className="nav-item-hover">
+                <li className="nav-item">
+                  <Scroll
+                    onClick={() => this.toggleMenu(!openMenu)}
+                    type="id"
+                    element="about"
+                  >
+                    <a className="nav-link" href="#about">
+                      About
+                    </a>
+                  </Scroll>
+                </li>
+              </div>
+              <div className="nav-item-hover">
+                <li className="nav-item medium">
+                  <Scroll
+                    onClick={() => this.toggleMenu(!openMenu)}
+                    type="id"
+                    element="skills"
+                  >
+                    <a className="nav-link" href="#skills">
+                      Skillset
+                    </a>
+                  </Scroll>
+                </li>
+              </div>
+              <div className="nav-item-hover">
+                <li className="nav-item long">
+                  <Scroll
+                    onClick={() => this.toggleMenu(!openMenu)}
+                    type="id"
+                    element="projects"
+                  >
+                    <a className="nav-link" href="#projects">
+                      Projects
+                    </a>
+                  </Scroll>
+                </li>
+              </div>
+              <li className="nav-item-contact">
                 <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="home"
-                >
-                  <a className="nav-link" href="#">
-                    HOME
-                  </a>
-                </Scroll>
-              </li>
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="about"
-                >
-                  <a className="nav-link" href="#about">
-                    ABOUT
-                  </a>
-                </Scroll>
-              </li>
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="skills"
-                >
-                  <a className="nav-link longer" href="#skills">
-                    SKILLSET
-                  </a>
-                </Scroll>
-              </li>
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="projects"
-                >
-                  <a className="nav-link longer" href="#projects">
-                    PROJECTS
-                  </a>
-                </Scroll>
-              </li>
-              <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
+                  onClick={() => this.toggleMenu(!openMenu)}
                   type="id"
                   element="contact"
                 >
-                  <a className="nav-link longer" href="#contact">
-                    CONTACT
+                  <a className="nav-link contact" href="#contact">
+                    Contact
                   </a>
                 </Scroll>
               </li>

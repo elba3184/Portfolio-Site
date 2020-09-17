@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Fragment>
       <div className="about-me-container">
-        <div className="about-me-title">ABOUT ME</div>
+        <div className="about-me-title">About Me</div>
         <div className="about-me-content">
           <div className="honeycomb-cell professional">
             <img

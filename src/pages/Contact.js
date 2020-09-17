@@ -56,16 +56,16 @@ const Contact = () => {
     <div className="contact-container">
       {/* <i className="devicon-github-plain-wordmark"></i>
       <i className="devicon-linkedin-plain"></i> */}
-      <div className="contact-title">CONTACT ME</div>
+      <div className="contact-title">Let's make something great together!</div>
       <div className="contact-subtitle">
         {" "}
         I'm always looking for new ways to immerse myself in tech! Please feel
         free to contact me!
-        <ContactIcons />
+        {/* <ContactIcons />  */}
       </div>
       <ContactForm />
     </div>
   )
 }
 
-export default Contact
+export { ContactIcons, Contact }

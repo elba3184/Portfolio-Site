@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <Fragment>
       <div className="skills-container">
-        <div className="title">SKILLS & TOOLS</div>
+        <div className="title">Skills & Tools</div>
         <div className="skills-item-container">
           <span className="flex-item js">
             {/* <a
@@ -78,7 +78,7 @@ const Skills = () => {
           </span>
         </div>
         <div className="currently-learning">
-          Currently learning:
+          Currently Learning
           <div className="skills-item-container">
             <span className="flex-item redux">
               <div className="iconify-icon">
@@ -111,7 +111,7 @@ const Skills = () => {
           <span>Gatsby </span> */}
         </div>
       </div>
-      <div className="skills-container-bottom"></div>
+      {/* <div className="skills-container-bottom"></div> */}
     </Fragment>
   )
 }

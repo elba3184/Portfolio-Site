@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar"
 import About from "../pages/About"
 import Skills from "../components/Skills"
 import Projects from "../pages/Projects"
-import Contact from "../pages/Contact"
+import { Contact } from "../pages/Contact"
 import Footer from "../components/Footer"
 import "../scss/Home.scss"
 
@@ -63,9 +63,9 @@ const IndexPage = () => (
     <section id="skills" className="skills-section">
       <Skills />
     </section>
-    <section id="projects" className="projects-section text-center">
+    {/* <section id="projects" className="projects-section text-center">
       <Projects />
-    </section>
+    </section> */}
     <div className="contact-container">
       <section id="contact" className="contact-section text-center">
         <Contact />
