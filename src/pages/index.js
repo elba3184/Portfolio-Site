@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar"
 import About from "../pages/About"
 import Skills from "../components/Skills"
 import Projects from "../pages/Projects"
-import { Contact } from "../pages/Contact"
+import Contact from "../pages/Contact"
 import Footer from "../components/Footer"
 import "../scss/Home.scss"
 

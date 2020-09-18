@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import Title from "../components/Title"
-import { ContactIcons } from "../pages/Contact"
-import { HomeButton } from "../components/CustomizedButton"
+import ContactIcons from "../components/ContactIcons"
+import HomeButton from "../components/HomeButton"
 import "../scss/Home.scss"
 
 const Home = () => {
