@@ -14,6 +14,7 @@ class ContactIcons extends Component {
               <a
                 href="mailto: emchimilio@gmail.com"
                 target="_blank"
+                rel="noreferrer"
                 style={{ marginBottom: "20px" }}
               >
                 <Icon icon={gmailIcon} />
@@ -32,6 +33,7 @@ class ContactIcons extends Component {
               <a
                 href=" https://www.linkedin.com/in/elbachimilio/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <i className="devicon-linkedin-plain"></i>
               </a>
@@ -39,7 +41,7 @@ class ContactIcons extends Component {
           </span>
           <span>
             <div className="flex-item dev">
-              <a href="https://dev.to/elba3184" target="_blank">
+              <a href="https://dev.to/elba3184" target="_blank" rel="noreferrer">
                 <Icon icon={devTo} />
               </a>
             </div>

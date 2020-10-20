@@ -13,6 +13,7 @@ const Footer = () => {
             <a
               href="mailto: emchimilio@gmail.com"
               target="_blank"
+              rel="noreferrer"
               style={{ marginBottom: "20px" }}
             >
               <Icon icon={gmailIcon} />
@@ -21,7 +22,7 @@ const Footer = () => {
         </span>
         <span>
           <div className="flex-item github">
-            <a href="https://github.com/elba3184/" target="_blank">
+            <a href="https://github.com/elba3184/" target="_blank" rel="noreferrer">
               <i className="devicon-github-plain-wordmark"></i>
             </a>
           </div>
@@ -31,6 +32,7 @@ const Footer = () => {
             <a
               href=" https://www.linkedin.com/in/elbachimilio/"
               target="_blank"
+              rel="noreferrer"
             >
               <i className="devicon-linkedin-plain"></i>
             </a>
@@ -38,7 +40,7 @@ const Footer = () => {
         </span>
         <span>
           <div className="flex-item dev">
-            <a href="https://dev.to/elba3184" target="_blank">
+            <a href="https://dev.to/elba3184" target="_blank" rel="noreferrer">
               <Icon icon={devTo} />
             </a>
           </div>

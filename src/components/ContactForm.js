@@ -22,6 +22,7 @@ class ContactForm extends Component {
                     required
                     name="name"
                     id="name"
+                    aria-label="Name"
                     placeholder="John Doe"
                   />
                 </label>
@@ -34,6 +35,7 @@ class ContactForm extends Component {
                     required
                     name="email"
                     id="email"
+                    aria-label="Email"
                     placeholder="johndoe@gmail.com"
                   />
                 </label>
@@ -46,6 +48,7 @@ class ContactForm extends Component {
                   required
                   name="phone"
                   id="phone"
+                  aria-label="Phone"
                   placeholder="(123) 456-7890"
                 />
               </label>
@@ -58,6 +61,7 @@ class ContactForm extends Component {
                   required
                   name="subject"
                   id="subject"
+                  aria-label="Subject"
                   placeholder="Let's Connect"
                 />
               </label>
@@ -71,6 +75,7 @@ class ContactForm extends Component {
                   required
                   id="message"
                   rows="5"
+                  aria-label="Message"
                   placeholder="Hi, Elba! I would love to discuss your background more. Let's get in touch!"
                 />
               </label>

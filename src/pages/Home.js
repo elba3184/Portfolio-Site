@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <Fragment>
       <div className="home-bg">
-        {/* <div className="dot-wrapper">
+        <div className="dot-wrapper-top">
           <div className="dot"></div>
-        </div> */}
+        </div>
         <div className="title-ellipse"></div>
         <div className="title-container">
           <div className="title-left">
@@ -26,6 +26,9 @@ const Home = () => {
               <HomeButton btnName={"Projects"} />
             </span>
           </div>
+        </div>
+        <div className="dot-wrapper-side">
+          <div className="dot"></div>
         </div>
       </div>
     </Fragment>

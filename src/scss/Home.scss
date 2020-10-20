@@ -25,19 +25,31 @@ body {
   box-sizing: content-box;
 }
 
-.dot-wrapper {
+.dot-wrapper-top {
+  margin-left: 380px;
+  margin-bottom: 10px;
+  width: 470px;
+  height: 160px;
   display: flex;
   z-index: 1040;
-  margin-left: 400px;
-  margin-bottom: 10px;
-  width: 400px;
-  height: 160px;
   opacity: 0.1;
-  background-size: 8px 8px;
+  background-size: 10px 10px;
   background-repeat: space;
-  margin-bottom: 20px;
   background-position: initial;
-  // background-image: url("../../static/dot.png");
+  background-image: url("../../static/dot.png");
+}
+
+.dot-wrapper-side {
+  margin-left: 1380px;
+  width: 40px;
+  height: 200px;
+  display: flex;
+  z-index: 1040;
+  opacity: 0.1;
+  background-size: 10px 10px;
+  background-repeat: space;
+  background-position: initial;
+  background-image: url("../../static/dot.png");
 }
 
 .title-left {
