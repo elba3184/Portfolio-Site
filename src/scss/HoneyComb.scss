@@ -5,11 +5,10 @@ $hexagon-height-professional: $hexagon-width-professional * 0.58;
 $hexagon-margin: 50px;
 $hexagon-title-color: #fff;
 $hexagon-border-color: #fff;
-$hexagon-border-color--hover: #ffe66dff;
+$hexagon-border-color--hover: #48bfe3;
 $hexagon-image-color: #3ea0eb;
 $honeycomb-max-width: 1200px;
 $viewport-thereshold: $hexagon-width + $hexagon-margin;
-$light-coral: #ff6b6bff;
 @import "../scss/variables.scss";
 @import url("https:fonts.googleapis.com/css?family=Montserrat:400,700");
 
@@ -61,7 +60,7 @@ $light-coral: #ff6b6bff;
       transition: opacity 350ms;
 
       > small {
-        color: $light-coral;
+        color: $dark-blue;
         font-weight: 300;
         margin-top: 0.25em;
       }
@@ -161,7 +160,7 @@ $light-coral: #ff6b6bff;
         transition: opacity 350ms;
 
         > small {
-          color: $light-coral;
+          color: $dark-blue;
           font-weight: 300;
           margin-top: 0.25em;
         }

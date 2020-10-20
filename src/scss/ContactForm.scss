@@ -1,18 +1,11 @@
 @import "../scss/variables.scss";
 
 .contact-form-container {
-  width: 80vh;
-  display: flex;
-  border-radius: 10px;
   .form {
     width: 100%;
   }
-  .form-row {
-    display: flex;
-    flex-direction: row;
-  }
   .form-items {
-    padding: 40px 80px 20px 80px;
+    padding: 40px 40px 20px 40px;
     display: flex;
     flex-direction: column;
     .asterisk-red {
@@ -32,14 +25,24 @@
       padding-bottom: 5px;
     }
     label {
+      padding-left: 15px;
+      padding-bottom: 20px;
+      width: 100%;
       font-size: 14px;
       color: white;
       text-transform: uppercase;
       text-align: left;
-      width: 100%;
-      padding-bottom: 20px;
+    }
+    .row-label {
+      padding: 0 0 20px 20px;
+      width: 50%;
+      font-size: 14px;
+      color: white;
+      text-transform: uppercase;
+      text-align: left;
     }
     .clear-btn {
+      margin-left: 20px;
       width: 130px;
       height: 50px;
       display: flex;
@@ -86,3 +89,35 @@
     }
   }
 }
+
+/*=================== Media Queries ===================*/
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contact-form-container {
+    width: 90vh;
+    display: flex;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .contact-form-container {
+    width: 90vh;
+    display: flex;
+  }
+}
+
+/*=================== Media Queries ===================*/

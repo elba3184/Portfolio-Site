@@ -3,6 +3,7 @@ import Scroll from "./Scroll"
 import { Icon } from "@iconify/react"
 import menuIcon from "@iconify/icons-heroicons-outline/menu"
 import xIcon from "@iconify/icons-bi/x"
+import DarkModeButton from '../components/DarkModeButton'
 // import logo from "../../static/logo.jpeg"
 import "../scss/Navbar.scss"
 
@@ -134,16 +135,7 @@ export default class Header extends Component {
                   </a>
                 </Scroll>
               </li>
-              {/* <div class="custom-control custom-switch">
-                <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="darkSwitch"
-                />
-                <label class="custom-control-label" for="darkSwitch">
-                  Dark Mode
-                </label>
-              </div> */}
+              {/* <div><DarkModeButton /></div> */}
             </ul>
           </div>
         </div>

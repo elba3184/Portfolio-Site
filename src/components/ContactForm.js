@@ -13,7 +13,7 @@ class ContactForm extends Component {
           >
             <div className="form-items">
               <div className="form-row">
-                <label>
+                <label className="row-label">
                   <h6>
                     Name <span className="asterisk-red">*</span>
                   </h6>
@@ -22,10 +22,10 @@ class ContactForm extends Component {
                     required
                     name="name"
                     id="name"
-                    placeholder="Name"
+                    placeholder="John Doe"
                   />
                 </label>
-                <label>
+                <label className="row-label">
                   <h6>
                     Email <span className="asterisk-red">*</span>
                   </h6>
@@ -34,21 +34,22 @@ class ContactForm extends Component {
                     required
                     name="email"
                     id="email"
-                    placeholder="Email"
+                    placeholder="johndoe@gmail.com"
                   />
                 </label>
               </div>
-              <label>
+              <div className="form-row">
+              <label className="row-label">
                 <h6>Phone Number</h6>
                 <input
                   type="tel"
                   required
                   name="phone"
                   id="phone"
-                  placeholder="Phone Number"
+                  placeholder="(123) 456-7890"
                 />
               </label>
-              <label>
+              <label className="row-label">
                 <h6>
                   Subject <span className="asterisk-red">*</span>
                 </h6>
@@ -57,9 +58,10 @@ class ContactForm extends Component {
                   required
                   name="subject"
                   id="subject"
-                  placeholder="Subject"
+                  placeholder="Let's Connect"
                 />
               </label>
+              </div>
               <label>
                 <h6>
                   Message <span className="asterisk-red">*</span>
@@ -69,14 +71,14 @@ class ContactForm extends Component {
                   required
                   id="message"
                   rows="5"
-                  placeholder="Message"
+                  placeholder="Hi, Elba! I would love to discuss your background more. Let's get in touch!"
                 />
               </label>
               <input type="reset" value="Clear" className="clear-btn" />
-            </div>
             <div className="submit-button-container">
               {" "}
               <button type="submit">Send</button>
+            </div>
             </div>
           </form>
         </div>

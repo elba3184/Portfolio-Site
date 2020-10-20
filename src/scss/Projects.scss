@@ -2,7 +2,7 @@
 
 .projects-container {
   color: white;
-  height: 100vh;
+  height: 155vh;
   background-color: $oxford-blue;
   .title {
     padding-top: 120px;
@@ -14,9 +14,60 @@
 }
 
 .item-container {
+  margin-top: 40px;
   display: flex;
+  flex-direction: column;
+  .project-column-1,
+  .project-column-2 {
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   img {
-    width: 40%;
-    height: 80%;
+    margin: 30px;
+    width: 350px;
+    height: 290px;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+  img:hover {
+    box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5);
+    border: 5px solid $sky-blue;
+  }
+  .project-1-img,
+  .project-5-img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.project-fight-pandemics {
+  padding-top: 10px;
+  padding-left: 60px;
+  color: white;
+  font-size: 12pt;
+  text-align: center;
+  a {
+    color: $purple;
+  }
+  a:hover {
+    color: $turquoise;
+    text-decoration: none;
+  }
+}
+
+.project-github {
+  padding-top: 10px;
+  padding-left: 60px;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+  a {
+    color: $vivid-sky-blue;
+  }
+  a:hover {
+    color: $turquoise;
+    text-decoration: none;
   }
 }

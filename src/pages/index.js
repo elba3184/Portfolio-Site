@@ -63,9 +63,9 @@ const IndexPage = () => (
     <section id="skills" className="skills-section">
       <Skills />
     </section>
-    {/* <section id="projects" className="projects-section text-center">
+    <section id="projects" className="projects-section">
       <Projects />
-    </section> */}
+    </section>
     <div className="contact-container">
       <section id="contact" className="contact-section text-center">
         <Contact />
@@ -73,6 +73,7 @@ const IndexPage = () => (
       <div className="footer-container">
         <Footer />
       </div>
+      {/* <div className="sticky-button">TOP</div> */}
     </div>
   </Fragment>
 )

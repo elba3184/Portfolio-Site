@@ -16,22 +16,11 @@ const Skills = () => {
         <div className="title">Skills & Tools</div>
         <div className="skills-item-container">
           <span className="flex-item js">
-            {/* <a
-              href="https://www.javascript.com/"
-              target="_blank"
-              alt="JavaScript"
-            > */}
             <i className="devicon-javascript-plain"></i>
-            {/* </a> */}
           </span>
           <span className="flex-item react">
             <i className="devicon-react-original-wordmark"></i>
           </span>
-          {/* <span className="flex-item redux">
-            <div className="iconify-icon">
-              <Icon icon={reduxIcon} />
-            </div>
-          </span> */}
           <span className="flex-item node">
             <i className="devicon-nodejs-plain"></i>
           </span>
@@ -106,12 +95,8 @@ const Skills = () => {
               </div>
             </span>
           </div>
-          {/* <span> Serverless Stack, </span>
-          <span>AWS Services (DynamoDB, API Gateway, Lambda, S3 Bucket), </span>
-          <span>Gatsby </span> */}
         </div>
       </div>
-      {/* <div className="skills-container-bottom"></div> */}
     </Fragment>
   )
 }

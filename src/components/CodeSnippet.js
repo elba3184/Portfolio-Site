@@ -1,41 +1,27 @@
 import React, { Fragment } from "react"
-// , Component
-// import Typing, { Delay, Speed } from "react-typing-animation"
+import Typing, {  Backspace  } from "react-typing-animation"
 import "../scss/CodeSnippet.scss"
-
-// class TitleTransition extends Component {
-//   render() {
-//     return (
-//       <Fragment>
-//         <Typing speed={100}>
-//           {/* <span>console.log("Hello, World!");</span>
-//           <Typing.Backspace count={40} />
-//           <span>This line will stay.</span>
-//           <span>This line will get instantly removed after a 500 ms delay</span>
-//           <Typing.Reset count={1} delay={500} /> */}
-//           <Delay ms={1000} />
-//           <li>
-//             <span> &#10004;</span> Change the <Speed ms={250} /> speed{" "}
-//             <Speed ms={20} /> of typing anywhere <Speed ms={40} /> in the tree.
-//           </li>
-//         </Typing>
-//       </Fragment>
-//     )
-//   }
-// }
 
 const CodeSnippet = () => {
   return (
     <Fragment>
       <div className="read-me-container">
         <pre>
-          <span>README.md</span>
+          <Fragment>
+            <Typing speed={20}>
+              <span>console.log("Hello, World!");
+                <Backspace count={30} speed={80}/>
+              {"README.md"}
+              </span>
+            </Typing>
+          </Fragment>
+          <span></span>
           <span className="read-me-title">
             <b>Description: </b>
             <i>
               A driven Full-Stack Developer and devoted Starbucks customer ☕️
             </i>
-          </span>
+            </span>
 
           <span></span>
 
@@ -88,23 +74,12 @@ const CodeSnippet = () => {
             <i> Full-Stack Web Developer</i>
           </span>
           <span>
-            in <b>New York City (The Big 🍎)!</b>
+            in <b>New York (The Big 🍎)!</b>
           </span>
-          {/* <span></span> */}
-          <span>
-            ⚡️ Fun fact: <i>I'm good at memorizing commercial jingles</i>
-          </span>
-          {/* <span>
-            - 🌱 I’m currently learning **Serverless Framework, AWS Services and
-            Gatsby**
-          </span>
-          <span>
-            
-          </span> */}
         </pre>
       </div>
     </Fragment>
   )
 }
 
-export default CodeSnippet
+export default CodeSnippet;

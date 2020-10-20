@@ -7,6 +7,15 @@ body {
   }
 }
 
+.sticky-button {
+  position: sticky;
+  color: white;
+  font-size: 30pt;
+  bottom: 0px;
+  right: 5px;
+  z-index: 100;
+}
+
 .home-bg {
   height: 100vh;
   background: $oxford-blue;
